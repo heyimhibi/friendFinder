@@ -1,0 +1,41 @@
+
+.jumbotron {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+body {
+    background: transparent;
+    background-image: url("https://phandroid.com/wp-content/uploads/2014/09/marioland.png");
+    color: white;
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.questionContainer {
+    background: transparent;
+    align-items: center;
+    font-weight: bold;
+    color:black;
+    margin: 1%;
+    padding: 1%;
+    border: 4px;
+    border: solid;
+    border-color:red;
+    font-size: large;
+    width: 50%;
+}
+
+.answerContainer {
+    background: white;
+    margin: 1%;
+    padding: 1.5%;
+    border: 4px;
+    border: solid;
+    border-color:red;
+    font-size: medium;
+    color: black;
+    
+}
