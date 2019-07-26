@@ -30,3 +30,53 @@
 
 // 7. Once you've found the current user's most compatible friend, display the result as a modal pop-up.
 //   * The modal should display both the name and picture of the closest match.
+var friends = [
+{
+        "name":"Ahmed",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+          ]
+      },{
+        "name":"Geronimo",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+          ]
+      },{
+        "name":"Jonathan",
+        "photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+        "scores":[
+            5,
+            1,
+            4,
+            4,
+            5,
+            1,
+            2,
+            5,
+            4,
+            1
+          ]
+  }
+];
+
+      
