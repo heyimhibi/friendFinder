@@ -16,7 +16,6 @@ body {
 
 .questionContainer {
     background: transparent;
-    align-items: center;
     font-weight: bold;
     color:black;
     margin: 1%;
@@ -25,7 +24,7 @@ body {
     border: solid;
     border-color:red;
     font-size: large;
-    width: 50%;
+    width: 70%;
 }
 
 .answerContainer {

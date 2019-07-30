@@ -14,9 +14,9 @@ $(document).ready(function() {
             
             var radioName = ('answer'+[i]);
 
-                var newDivA = $(`<input type='radio' name=radioName${i}  class = 'answerA'>`);
-                newDivA.attr('value', questions[i].qAnswers.A);
-                var newDivAT = $("<div class='answerContainer'>").text(questions[i].qAnswers.A);
+                // var newDivA = $(`<input type='radio' name=radioName${i}  class = 'answerA'>`);
+                // newDivA.attr('value', questions[i].qAnswers.A);
+                // var newDivAT = $("<div class='answerContainer'>").text(questions[i].qAnswers.A);
                 
                 var newDivB = $(`<input type='radio' name=radioName${i}  class = 'answerB'>`);
                 newDivB.attr('value', questions[i].qAnswers.B); 
@@ -34,8 +34,8 @@ $(document).ready(function() {
                 newDivD.attr('value', questions[i].qAnswers.E);
                 var newDivET = $("<div class='answerContainer'>").text(questions[i].qAnswers.E);
         
-                $(newDivQ).append(newDivAT);
-                $(newDivAT).prepend(newDivA);
+                // $(newDivQ).append(newDivAT);
+                // $(newDivAT).prepend(newDivA);
             
 
                 $(newDivQ).append(newDivBT);
@@ -56,10 +56,9 @@ $(document).ready(function() {
 
             // ============================================================================================ //
 
-
-
 }   
 }
+
 questionLayout();
 
 $("#userAnswers").on("click", function(event){
@@ -70,24 +69,12 @@ $("#userAnswers").on("click", function(event){
     if (userInput.length < 10) {
         alert ("Please answer all the questions first!");
     }
-    else {
-        var correctAnswers = 0;
-
-        for (let j = 0; j < userInput.length; j++) {
-            console.log(questions[j].correctA, userInput[j].value);
-
-            if (questions[j].correctA === userInput[j].value) {
-                correctAnswers++;
-            }
-
-        }
-
-        console.log(correctAnswers);
-
-    }
+ 
 
     }); 
     
 
 
 });
+
+console.log(questions);
