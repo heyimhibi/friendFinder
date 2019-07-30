@@ -24,8 +24,9 @@ body {
     border: solid;
     border-color:red;
     font-size: large;
-    width: 70%;
+    border-style: solid;
 }
+
 
 .answerContainer {
     background: white;

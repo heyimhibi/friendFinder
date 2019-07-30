@@ -14,9 +14,9 @@ $(document).ready(function() {
             
             var radioName = ('answer'+[i]);
 
-                // var newDivA = $(`<input type='radio' name=radioName${i}  class = 'answerA'>`);
-                // newDivA.attr('value', questions[i].qAnswers.A);
-                // var newDivAT = $("<div class='answerContainer'>").text(questions[i].qAnswers.A);
+                var newDivA = $(`<input type='radio' name=radioName${i}  class = 'answerA'>`);
+                newDivA.attr('value', questions[i].qAnswers.A);
+                var newDivAT = $("<div class='answerContainer'>").text(questions[i].qAnswers.A);
                 
                 var newDivB = $(`<input type='radio' name=radioName${i}  class = 'answerB'>`);
                 newDivB.attr('value', questions[i].qAnswers.B); 
@@ -34,8 +34,8 @@ $(document).ready(function() {
                 newDivD.attr('value', questions[i].qAnswers.E);
                 var newDivET = $("<div class='answerContainer'>").text(questions[i].qAnswers.E);
         
-                // $(newDivQ).append(newDivAT);
-                // $(newDivAT).prepend(newDivA);
+                $(newDivQ).append(newDivAT);
+                $(newDivAT).prepend(newDivA);
             
 
                 $(newDivQ).append(newDivBT);
@@ -69,12 +69,29 @@ $("#userAnswers").on("click", function(event){
     if (userInput.length < 10) {
         alert ("Please answer all the questions first!");
     }
- 
+    else {
+        
+   
+        console.log (userInput);
+    }
+
+    // function convertAnswers () {
+    //     switch (userInput) {
+    //         case input[i].answer[i].value: "strongly disagree";
+    //         var answer = 1;
+                
+    //             break;
+        
+    //         default:
+    //             console.log (answer);
+    //             break;
+    //     }
+
+//     }
+//  convertAnswers();
 
     }); 
     
 
 
 });
-
-console.log(questions);
