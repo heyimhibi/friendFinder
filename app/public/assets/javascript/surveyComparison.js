@@ -56,8 +56,6 @@ $(document).ready(function() {
 
             // ============================================================================================ //
         };
-        
-
 
 };
 
@@ -65,55 +63,14 @@ questionLayout();
 
 $("#userAnswers").on("click", function(event){
     var userInput = $("input[type='radio']:checked");
-    var answers = [];
-    userInput.push (answers);
-    
-    if (userInput.length < 10) {
-        alert ("Please answer all the questions first!");
-    }
-    else {
 
-        for (let i = 0; i < userInput.length; i++) {
-            // var userInputAnswers = userInput[i].value;
-            // var answers = [userInputAnswers].val();
-            // var allAnswers = [];
-            // if ( i < 10) {
+    var userAnswers = [];
     
-            //      allAnswers.push (answers);
-            // }
-           
-            console.log(answers);
-
-            
-    
-};
-    };
+   for (var i = 0; i < userInput.length; i++) {
+       userAnswers.push(userInput[i].value)
+   }
+console.log (userAnswers);
 
 });
-    
-    // 
-
-    // 
-
-    
-
-
-    // if (userInput.length < 10) {
-    //     alert ("Please answer all the questions first!");
-    // }
-    // else {
-    //     for (let i = 0; i < UserInput.length; i++) {
-            
-    //     var userAnswers = JSON.stringify(userInput[i].value);
-    //     console.log (userAnswers);
-    //     console.log(userInput);
-        // var convertedAnswers = JSON.parse(userAnswers.value);
-        // };
-   
-        // console.log (convertedAnswers);
-    // };
-
- 
-
 
 });
