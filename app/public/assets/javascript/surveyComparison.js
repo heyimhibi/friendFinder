@@ -65,6 +65,8 @@ questionLayout();
 
 $("#userAnswers").on("click", function(event){
     var userInput = $("input[type='radio']:checked");
+    var answers = [];
+    userInput.push (answers);
     
     if (userInput.length < 10) {
         alert ("Please answer all the questions first!");
@@ -72,9 +74,17 @@ $("#userAnswers").on("click", function(event){
     else {
 
         for (let i = 0; i < userInput.length; i++) {
-            var answerArray = [userInput[i].value];
-            parseInt(answerArray);
-            console.log(answerArray);
+            // var userInputAnswers = userInput[i].value;
+            // var answers = [userInputAnswers].val();
+            // var allAnswers = [];
+            // if ( i < 10) {
+    
+            //      allAnswers.push (answers);
+            // }
+           
+            console.log(answers);
+
+            
     
 };
     };
