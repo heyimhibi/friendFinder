@@ -31,7 +31,7 @@ $(document).ready(function() {
                 var newDivDT = $("<div class='answerContainer'>").text(questions[i].qAnswers.D);
 
                 var newDivE = $(`<input type='radio' name=radioName${i}  class = 'answerD'>`); 
-                newDivD.attr('value', questions[i].qAnswers.E);
+                newDivE.attr('value', questions[i].qAnswers.E);
                 var newDivET = $("<div class='answerContainer'>").text(questions[i].qAnswers.E);
         
                 $(newDivQ).append(newDivAT);
@@ -55,43 +55,55 @@ $(document).ready(function() {
                 $('#questionsForm').append(newDivQ);
 
             // ============================================================================================ //
+        };
+        
 
-}   
-}
+
+};
 
 questionLayout();
 
 $("#userAnswers").on("click", function(event){
     var userInput = $("input[type='radio']:checked");
     
-    
-
     if (userInput.length < 10) {
         alert ("Please answer all the questions first!");
     }
     else {
-        
-   
-        console.log (userInput);
-    }
 
-    // function convertAnswers () {
-    //     switch (userInput) {
-    //         case input[i].answer[i].value: "strongly disagree";
-    //         var answer = 1;
-                
-    //             break;
-        
-    //         default:
-    //             console.log (answer);
-    //             break;
-    //     }
-
-//     }
-//  convertAnswers();
-
-    }); 
+        for (let i = 0; i < userInput.length; i++) {
+            var answerArray = [userInput[i].value];
+            parseInt(answerArray);
+            console.log(answerArray);
     
+};
+    };
+
+});
+    
+    // 
+
+    // 
+
+    
+
+
+    // if (userInput.length < 10) {
+    //     alert ("Please answer all the questions first!");
+    // }
+    // else {
+    //     for (let i = 0; i < UserInput.length; i++) {
+            
+    //     var userAnswers = JSON.stringify(userInput[i].value);
+    //     console.log (userAnswers);
+    //     console.log(userInput);
+        // var convertedAnswers = JSON.parse(userAnswers.value);
+        // };
+   
+        // console.log (convertedAnswers);
+    // };
+
+ 
 
 
 });

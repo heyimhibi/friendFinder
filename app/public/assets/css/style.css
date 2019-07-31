@@ -39,3 +39,14 @@ body {
     color: black;
     
 }
+
+.instructions {
+    background: white;
+    margin: 1%;
+    padding: 1.5%;
+    border: 4px;
+    border: solid;
+    border-color:red;
+    font-size: medium;
+    color: black;
+}
